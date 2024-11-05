@@ -1,0 +1,10 @@
+To use tailwind css and flowbite in html file
+1. Run the command -
+npx tailwindcss -i ./src/main/resources/static/css/input.css -o ./src/main/resources/static/css/output.css --watch
+2. Include output.css in html
+ <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+3. If you want to include flowbite
+include css and javascript using cdn
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+and 
+ <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
